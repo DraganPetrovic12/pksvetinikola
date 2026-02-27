@@ -1,0 +1,38 @@
+/*!
+Theme Name: UI-Kit
+Theme URI: https://getuikit.com/
+Author: Canicinteractive
+Description: Custom made theme with UIkit framework
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: uikit
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+/*--------------------------------------------------------------
+# UIkit default variables and available mixins
+--------------------------------------------------------------*/
+@import "uikit/variables.scss";
+@import "uikit/mixins.scss";
+
+/*--------------------------------------------------------------
+# Custom variables
+--------------------------------------------------------------*/
+@import "custom/custom-variables";
+
+/*--------------------------------------------------------------
+# Import UIkit.
+--------------------------------------------------------------*/
+@import "uikit/uikit.scss";
+
+/*--------------------------------------------------------------
+# Custom styling
+--------------------------------------------------------------*/
+@import "custom/style";
+
+

@@ -1,0 +1,34 @@
+# WordPress core
+wp-config.php
+wp-content/uploads/
+wp-content/upgrade/
+wp-content/backup-db/
+wp-content/cache/
+wp-content/languages/
+
+# DDEV
+.ddev/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Archives
+*.zip
+*.tar.gz
+*.sql
+wp-content.zip
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Other
+ci_adminer.php
+license.txt
+readme.html
+wp-config-sample*.php
