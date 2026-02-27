@@ -32,3 +32,4 @@ ci_adminer.php
 license.txt
 readme.html
 wp-config-sample*.php
+wp-config-ddev.php
