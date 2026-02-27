@@ -54,7 +54,7 @@ get_header();
 													'orderby'          => 'post_date',
 													'post_status' => 'publish',
 													'posts_per_page' => 3,
-													'offset' => 1,
+													'post__not_in' => array( get_the_ID() ),
 													'order'            => 'DESC',
 												);
 												$the_query = new WP_Query( $args ); ?>
@@ -99,6 +99,7 @@ get_header();
 									'orderby'          => 'post_date',
 									'post_status' => 'publish',
 									'posts_per_page' => 3,
+									'post__not_in' => array( get_the_ID() ),
 									'order'            => 'DESC',
 								);
 								$the_query = new WP_Query( $args ); ?>
