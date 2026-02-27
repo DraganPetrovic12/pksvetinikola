@@ -2692,6 +2692,8 @@ img {
 	}
 
 	.ci-member__content {
+		position: relative;
+		z-index: 22;
 		padding: 1.5rem;
 		border-radius: 7px 25px;
 		//background-color: rgba(255, 255, 255, .6);
