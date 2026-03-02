@@ -542,15 +542,18 @@ img {
 		align-items: center;
 		padding: 5px 0;
 
-		// background-color: $white;
 		.header-logo {
 			display: inline-flex;
 			align-items: center;
+			text-decoration: none;
 
-			//max-height: 70px;
 			img {
 				max-width: 70px;
 				width: 100%;
+			}
+
+			&:hover {
+				text-decoration: none;
 			}
 		}
 
