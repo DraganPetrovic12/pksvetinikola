@@ -11,25 +11,30 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-
-		<?php if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php
-			ci_uikit_posted_on();
-			ci_uikit_posted_by();
-			?>
-		</div><!-- .entry-meta -->
-		<?php endif; ?>
+		<?php the_title( sprintf( '<h3 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
 	</header><!-- .entry-header -->
-
-	<?php ci_uikit_post_thumbnail(); ?>
-
-	<div class="entry-summary">
+<div class="uk-grid uk-flex uk-flex-middle" data-uk-grid>
+	<div class="uk-width-1-3@s">
+		<?php if(has_post_thumbnail()): ?>
+			<div class="poster-img">
+				<?php ci_uikit_post_thumbnail(); ?>
+			</div>
+		<?php else: ?>
+			<div class="placeholder-img">
+				<a href="<?php the_permalink(); ?>">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/svetinikolamichroma-black-text.svg">
+				</a>
+			</div>
+		<?php endif; ?>
+	</div>
+	<div class="uk-width-2-3@s">
+		<div class="date"><?php echo get_the_date('F d, Y') ;?></div>
+		<div class="entry-summary">
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-summary -->
+		<a class="read-more-btn" href="<?php the_permalink(); ?>">Pročitaj Više</a>
+	</div>
+</div>
 
-	<footer class="entry-footer">
-		<?php ci_uikit_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+
 </article><!-- #post-<?php the_ID(); ?> -->

@@ -1897,7 +1897,7 @@ img {
 			top: 0;
 			height: 15px;
 			width: 25px;
-			background-image: url(images/quotes.svg);
+			background-image: url(images/quote-5.svg);
 			background-color: transparent;
 			background-position: center;
 			background-size: contain;
@@ -2525,6 +2525,7 @@ img {
 		.post-thumbnail {
 			img {
 				margin-bottom: 2rem;
+				border-radius: 1.5rem;
 			}
 		}
 	}
